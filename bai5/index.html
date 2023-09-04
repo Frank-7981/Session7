@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 5</title>
+</head>
+<body>
+    <script>
+        let diemKT = +prompt(" nhập điểm kiểm tra ");
+        let diemGK = +prompt(" nhập điểm giữa kì ");
+        let diemCK = +prompt(" nhập điểm cuối kì ");
+
+        let diemTrungBinh = ( diemKT + diemGK + diemCK ) / 3;
+
+        if ( diemTrungBinh >= 8 ) {
+            console.log(" Điểm trung bình : ",diemTrungBinh );
+            console.log(" Học sinh giỏi ");
+        } else if ( diemTrungBinh >= 6.5 ) {
+            console.log(" Điểm trung bình : ",diemTrungBinh );
+            console.log(" Học sinh khá ");
+        } else if ( diemTrungBinh >= 5) {
+            console.log(" Điểm trung bình : ",diemTrungBinh );
+            console.log(" Học sinh trung bình ");
+        } else {
+            console.log(" Điểm trung bình : ",diemTrungBinh );
+            console.log(" Học sinh kém ");
+        }
+    </script>
+</body>
+</html>
